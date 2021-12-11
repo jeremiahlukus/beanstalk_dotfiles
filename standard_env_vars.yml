@@ -1,0 +1,20 @@
+    - namespace: aws:elasticbeanstalk:application:environment
+      option_name: REDIS_HOST
+      value: <%= ENV['REDIS_HOST'] %>
+    - namespace: aws:elasticbeanstalk:application:environment
+      option_name: DATABASE_HOST
+      value: <%= ENV['DATABASE_HOST'] %>
+    - namespace: aws:elasticbeanstalk:application:environment
+      option_name: DATABASE
+      value: <%= ENV['DATABASE'] %>
+    - namespace: aws:elasticbeanstalk:application:environment
+      option_name: DATABASE_USERNAME
+      value: <%= ENV['DATABASE_USERNAME'] %>
+    - namespace: aws:elasticbeanstalk:application:environment
+      option_name: DATABASE_PASSWORD
+      value: <%= ENV['DATABASE_PASSWORD'] %>
+    - namespace: aws:elasticbeanstalk:application
+      option_name: Application Healthcheck URL
+      value: '/healthcheck'
+
+
