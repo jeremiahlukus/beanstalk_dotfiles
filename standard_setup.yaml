@@ -1,3 +1,18 @@
+    - namespace: aws:elasticbeanstalk:command
+      option_name: Timeout
+      value: '1200'
+    - namespace: aws:autoscaling:launchconfiguration
+      option_name: InstanceType
+      value: m1.small
+    - namespace: aws:autoscaling:launchconfiguration
+      option_name: IamInstanceProfile
+      value: aws-elasticbeanstalk-ec2-role
+    - namespace: aws:autoscaling:launchconfiguration
+      option_name: InstanceType
+      value: c3.xlarge
+    - namespace: aws:elasticbeanstalk:application
+      option_name: Application Healthcheck URL
+      value: '/healthcheck'
     - namespace: aws:elasticbeanstalk:application:environment
       option_name: REDIS_HOST
       value: <%= ENV['REDIS_HOST'] %>
