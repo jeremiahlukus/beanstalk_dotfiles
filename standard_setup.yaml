@@ -34,5 +34,7 @@
     - namespace: aws:elasticbeanstalk:application
       option_name: Application Healthcheck URL
       value: '/healthcheck'
-
+    - namespace: aws:elasticbeanstalk:application:environment
+      option_name: RAILS_ENV
+      value: <%= ENV['RAILS_ENV'] %>
 
