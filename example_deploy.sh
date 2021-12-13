@@ -1,3 +1,5 @@
+#!/usr/bin/env bash
+
 export RAILS_MASTER_KEY="545b...530";
 export ENVIRONMENT=staging;
 export RAILS_ENV=staging;
