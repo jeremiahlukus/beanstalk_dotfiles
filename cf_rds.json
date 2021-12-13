@@ -83,16 +83,16 @@
 	    "Ref": "RDSDBSecurityGroup"
 	  }
 	],
-	"DBInstanceClass": "db.m1.small",
+	"DBInstanceClass": "db.r5.large",
 	"AllocatedStorage": "5",
-	"EngineVersion": "13.4-R1",
+	"EngineVersion": "13.4",
 	"DBName": {
 	  "Ref": "DBName"
 	},
 	"MasterUserPassword": {
 	  "Ref": "DBPassword"
 	},
-	"Engine": "postgresql"
+	"Engine": "postgres"
       }
     },
 
