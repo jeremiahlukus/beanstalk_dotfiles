@@ -1,0 +1,12 @@
+     template: config/cf_rds.json
+     inputs:
+       DBPassword: <%= ENV["DATABASE_PASSWORD"] %>
+       DBUser: <%= ENV["DATABASE_USERNAME"] %>
+       DBName: <%= ENV["DATABASE"] %>
+     outputs:
+       RDSPassSecurityGroup:
+         namespace: aws:autoscaling:launchconfiguration
+         option_name: SecurityGroups
+       RDSDatabaseConfig:
+         namespace: aws:elasticbeanstalk:application:environment
+         option_name: databaseConfig
