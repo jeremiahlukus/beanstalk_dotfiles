@@ -85,14 +85,14 @@
 	],
 	"DBInstanceClass": "db.m1.small",
 	"AllocatedStorage": "5",
-	"EngineVersion": "5.5",
+	"EngineVersion": "13.4-R1",
 	"DBName": {
 	  "Ref": "DBName"
 	},
 	"MasterUserPassword": {
 	  "Ref": "DBPassword"
 	},
-	"Engine": "mysql"
+	"Engine": "postgresql"
       }
     },
 
